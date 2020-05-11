@@ -1,0 +1,67 @@
+.div-cha-1 {
+    display: flex;
+    height: 70px;
+    margin: 15px 40px;
+}
+.mau-trang {
+    background-color: whitesmoke;
+}
+.mau-xanh {
+    background-color: #007bff;
+}
+.mau-vang {
+    background-color: yellow;
+}
+.mau-xam {
+    background-color: gray;
+}
+.mau-vien {
+    border: white solid 1px;
+}
+.div-con-11 {
+    width: 66.666667%;
+    margin: 15px 10px 15px 20px;
+}
+.div-con-12 {
+    width: 33.333333%;;
+    margin: 15px 20px 15px 10px ;
+}
+
+.div-cha-2 {
+    display: flex;
+    margin: 15px 40px;
+    height: 150px;
+}
+.div-con-21{
+    width: 50%;
+    height: inherit;
+}
+.div-con-1-1 {
+    height: 20px;   
+    margin: 20px 20px 0px 20px;
+}
+.div-con-1-2 {
+    height: 40px;
+    margin: 40px 20px 10px;
+}
+
+.div-con-22 {
+    display: flex;
+    width: 50%;
+    height: inherit;
+}
+.div-con-2 {
+    width: 50%;
+    margin: 20px 25px;
+}
+
+.div-cha-3 {
+    display: flex;
+    height: 40px;
+    margin: 15px 40px;
+}
+.div-con-3 {
+    height: 2px;
+    width: 33.33%;
+    margin: 20px 20px;
+}
