@@ -1,3 +1,50 @@
-.container {
+.container-fuild {
+    height: auto;
     
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    
+}
+li {
+    display: list-item;
+    margin: 10px;
+    padding-top: 10px;
+}
+
+.col-8 {
+    display: flex;
+}
+
+.menu-1,
+.menu-2 {
+    width: 50%;
+}
+
+.menu-2 {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.form-control {
+    width: 50% !important;
+    margin-right: 10px;
+}
+.brand {
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 15px;
+    padding-top: 15px;
+    display: inline-block;
+}
+.footer{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: gray;
+    left: 0;
+    bottom: 0;
 }
