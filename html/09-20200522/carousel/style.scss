@@ -1,0 +1,52 @@
+.img-1{
+    height: 600px;
+    background-image: url(huyennguyen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-2 {
+    height: 600px;
+    background-image: url(thuan-pham.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.img-3 {
+    height: 600px;
+    background-image: url(ruong-bac-thang.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-fluid {
+    min-height: 70px;
+}
+.m-header {
+    margin-top: 70px;
+}
+a:hover {
+    color: white !important;
+}
+.header {
+    &--fixed {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index:1;
+    }
+}
+.container{
+    &--bg-1{
+        border: 1px solid gray;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        background-image: url(huyennguyen.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 500px;
+    }
+    &--divider {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+}

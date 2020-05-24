@@ -1,0 +1,33 @@
+a:hover{
+    color: white !important;
+}
+a {
+    text-decoration: none !important;
+}
+.form-control {
+    background-color: #ffffff1a;
+}
+.fixed {
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 101;
+}
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 80px;
+    z-index: 100;
+    box-shadow: inset -1px 0 0 gray;
+}
+ul {
+    list-style: none;
+}
+.active {
+    a:visited {
+        color: white;
+    }
+}
