@@ -1,4 +1,4 @@
-a:hover {
+.hover a:hover {
   color: white !important;
 }
 
@@ -7,6 +7,8 @@ a {
 }
 
 .form-control {
+  width: 100%;
+  border: 0px solid gray;
   background-color: #ffffff1a;
 }
 
@@ -33,7 +35,7 @@ ul {
   list-style: none;
 }
 
-.active a:visited {
-  color: white;
+.active {
+  color: blue;
 }
 /*# sourceMappingURL=style.css.map */
