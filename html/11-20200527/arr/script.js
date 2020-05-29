@@ -30,36 +30,44 @@ var items = data['users'];
 console.log(items);
 
 function fillData() {
-    var tBodyElement = document.getElementById("table-body");
+    
     for(var i = 0; i < items.length ; i++)
     {
-        var tableRow = document.createElement("tr");
-        tBodyElement.appendChild(tableRow);
+        document.getElementById("table-body").innerHTML += 
+        "<tr>"+
+            "<td>"+items[i]["id"]+"</td>"+
+            "<td>"+items[i]["name"]+"</td>"+
+            "<td>"+items[i]["email"]+"</td>"+
+            "<td>"+items[i]["password"]+"</td>"+
+            "<td>"+items[i]["created_at"]+"</td>"+
+            "<td>"+items[i]["updated_at"]+"</td>"+
+        "</tr>";    
+        // var tableRow = document.createElement("tr");
+        // tBodyElement.appendChild(tableRow);
+        // var tableData1 = document.createElement("td");
+        // tableData1.innerHTML = items[i]["id"];
 
-        var tableData1 = document.createElement("td");
-        tableData1.innerHTML = items[i]["id"];
-
-        var tableData2 = document.createElement("td");
-        tableData2.innerHTML = items[i]["name"];
+        // var tableData2 = document.createElement("td");
+        // tableData2.innerHTML = items[i]["name"];
         
-        var tableData3 = document.createElement("td");
-        tableData3.innerHTML = items[i]["email"];
+        // var tableData3 = document.createElement("td");
+        // tableData3.innerHTML = items[i]["email"];
 
-        var tableData4 = document.createElement("td");
-        tableData4.innerHTML = items[i]["password"];
+        // var tableData4 = document.createElement("td");
+        // tableData4.innerHTML = items[i]["password"];
 
-        var tableData5 = document.createElement("td");
-        tableData5.innerHTML = items[i]["created_at"];
+        // var tableData5 = document.createElement("td");
+        // tableData5.innerHTML = items[i]["created_at"];
 
-        var tableData6 = document.createElement("td");
-        tableData6.innerHTML = items[i]["updated_at"];
+        // var tableData6 = document.createElement("td");
+        // tableData6.innerHTML = items[i]["updated_at"];
 
-        tableRow.appendChild(tableData1);
-        tableRow.appendChild(tableData2);
-        tableRow.appendChild(tableData3);
-        tableRow.appendChild(tableData4);
-        tableRow.appendChild(tableData5);
-        tableRow.appendChild(tableData6);
+        // tableRow.appendChild(tableData1);
+        // tableRow.appendChild(tableData2);
+        // tableRow.appendChild(tableData3);
+        // tableRow.appendChild(tableData4);
+        // tableRow.appendChild(tableData5);
+        // tableRow.appendChild(tableData6);
     }
     
 }
