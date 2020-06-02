@@ -1,0 +1,12 @@
+@media only screen and (max-width: 768px) {
+  .hide {
+    display: none;
+  }
+}
+
+ul {
+  list-style: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+/*# sourceMappingURL=style.css.map */

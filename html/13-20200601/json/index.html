@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td,tr,th {
+            border: 1px solid black;
+        }
+    </style>
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link rel="stylesheet" href="bootstrap.css">
+</head>
+<body>
+    <table class="table table-striped table-dark">
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Created_at</th>
+            <th>Updated_at</th>
+        </thead>
+        <tbody id="table-body">
+
+        </tbody>
+    </table>
+    <button id="clickme">CLick me</button>
+    <script>
+        $(document).ready(function(){
+            var arr = ["id","name","email","password","created_at","updated_at"];
+            $('#clickme').click(function(){
+                $(this).hide();
+                $.get('https://namcoi.com/du-an/aptech-php-laravel-crud-user/public/api/users', function(data,status){
+                    if(status == "success"){
+                        for(var i=0; i < data.users.length; i++){
+                            var row = document.createElement("tr");
+                            $("#table-body").append(row);
+                            for(var j = 0; j < arr.length ; j++){                               
+                                var col = document.createElement("td");
+                                col.innerHTML = data.users[i][arr[j]];
+                                row.appendChild(col);
+                            }                           
+                        }
+                    }
+                    else{
+                        console.log("[DEV] error !");
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
