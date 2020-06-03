@@ -1,0 +1,50 @@
+.bg {
+  background-image: url(juan-encalada-6mcVaoGNz1w-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.bg-1 {
+  background-image: url(cris-trung-3wK7RLRAAkA-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.height {
+  height: 400px;
+}
+
+@media only screen and (min-width: 768px) {
+  .input2 {
+    width: 25% !important;
+  }
+}
+
+.bg-2 {
+  border-radius: 50%;
+  background-image: url(juan-encalada-6mcVaoGNz1w-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 150px;
+  height: 150px;
+}
+
+.bg-3 {
+  background-image: url(juan-encalada-6mcVaoGNz1w-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+ul {
+  list-style: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+/*# sourceMappingURL=style.css.map */
