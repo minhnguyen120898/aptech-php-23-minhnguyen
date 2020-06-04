@@ -1,0 +1,36 @@
+.border {
+  width: 40px;
+  border-radius: 2px;
+  background-color: #28a745;
+}
+
+ul {
+  list-style: none;
+  -webkit-padding-start: 10px;
+          padding-inline-start: 10px;
+}
+
+a {
+  color: black;
+}
+
+hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.col-lg-4 {
+  padding: 1px;
+}
+
+.bg {
+  border-radius: 4px;
+  width: 70px;
+}
+
+@media only screen and (min-width: 992px) {
+  .center {
+    text-align: center !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */
