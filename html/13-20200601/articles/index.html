@@ -5,15 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Articles</title>
     <link rel="stylesheet" href="bootstrap.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+    <div class="container" id="display"> 
+        
+    </div>
+    <a href="#" id="load">Load du lieu</a>
     <script>
         $(document).ready(function(){
-            $.get('https://namcoi.com/du-an/aptech-php-laravel-news-website/public/api/articles'),function(data,status){
-                
-            }
-            
+            var arr = ['id','content','created_at','description','slug','updated_at','categories'];
+            $('#load').click(function(e){
+                e.preventDefault();
+                $.get('https://namcoi.com/du-an/aptech-php-laravel-news-website/public/api/articles',function(data,status){
+                    console.log(data);
+                    if(status == 'success'){
+                        for(var i=0; i < data.length; i++){
+                           var card = document.createElement("div");
+                           card.classList.add("card");
+                           
+                           $('#display').append(card);
+
+                           var header = document.createElement("div");
+                           header.classList.add("card-header");
+                           card.append(header);
+
+                           var title = document.createElement("h3");
+                           title.innerHTML = data[i]["title"];
+                           header.append(title); 
+
+                           var img = document.createElement("img");
+                           img.classList.add("card-img");
+                           img.src = data[i]['img'];
+                           card.append(img);
+
+                           var cardbody = document.createElement("div");
+                           cardbody.classList.add("card-body");
+                           card.append(cardbody);
+
+                           for(var j = 0 ; j < arr.length; j++){
+                               var p = document.createElement("p");
+                               p.classList.add("card-text");
+                               p.innerHTML = data[i][arr[j]];
+                               cardbody.append(p);
+                           } 
+
+                        }
+                    }
+                    else{
+                        console.log("[DEV] error !")
+                    }
+                });
+            })
         });
     </script>
 </body>
