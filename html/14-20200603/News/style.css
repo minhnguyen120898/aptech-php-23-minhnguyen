@@ -4,10 +4,19 @@
   background-color: #28a745;
 }
 
+.b1 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
 ul {
   list-style: none;
   -webkit-padding-start: 10px;
           padding-inline-start: 10px;
+  margin-bottom: 0;
 }
 
 a {

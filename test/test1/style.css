@@ -1,0 +1,40 @@
+.container {
+    max-width: 680px !important;
+    background-image: url(michael-martinelli-mFbrMEVKCkc-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 16px;
+}
+.container label {
+    font-weight: bold;
+}
+h1{
+    color: white;
+    text-shadow: 2px 2px #000000;
+    opacity: 1;
+}
+@keyframes animated_div
+{
+    0% {transform: rotateY(0deg);left:0px;}  
+    50% {transform: rotateY(180deg);left:0px;background-color: blanchedalmond;color:black}            
+    100% {transform: rotateY(360deg);left:0px;}
+}
+#animated_div {
+    margin-top: 40px;
+    width:70px;
+    height:47px;
+    background: red;
+    color: #ffffff;
+    position: relative;
+    font-weight:bold;
+    font-size:20px;
+    padding:10px;
+    border-radius: 4px;
+    text-align: center;
+    animation: animated_div 7s infinite;
+}
+.container label {
+    width: 25%;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="animated_div">SUN*</div>
+    </div>
+    <div class="container pb-5">       
+        <div class="row">
+            <div class="col-12">
+                
+                <h1 class="mt-3 ml-5" id="head">Register</h1>
+                <hr>          
+                <form action="#">
+                    <div class="mt-3">
+                        <div class="d-flex align-items-center">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" class="form-control" placeholder="" required>
+                        </div>                     
+                    </div>
+                    <div class="mt-3">                   
+                        <div class="d-flex align-items-center">
+                            <label for="password1">Password</label>
+                            <input type="password" id="password1" class="form-control" placeholder="" required>
+                        </div>                                                  
+                    </div>
+                    <div class="mt-3">                     
+                        <div class="d-flex align-items-center">
+                            <label for="password2">Confirm Password</label>
+                            <input type="password" id="password2" class="form-control" placeholder="" required>
+                        </div>                         
+                    </div>
+                    <div class="mt-3">                     
+                        <div class="d-flex align-items-center">
+                            <label for="mail">Email</label>
+                            <input type="email" id="mail" class="form-control" placeholder="" required>
+                        </div>                         
+                    </div>
+                    <div class="mt-3">                     
+                        <div class="d-flex align-items-center">
+                            <label for="phone">Phone</label>
+                            <input type="text" id="phone" class="form-control" placeholder="" required>
+                        </div>                           
+                    </div>
+                    <div class="mt-5 row">
+                        <div class="col-3"></div>
+                        <div class="col-9">
+                            <input type="submit" onclick="check()" value="Submit" class="btn btn-primary w-25">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+       function check(){
+                var pw1 = $("#password1").val();
+                var pw2 = $("#password2").val();
+                if( pw2 != pw1 ){
+                    alert("Password mismatch");
+                }
+            };
+       
+    </script>
+</body>
+</html>
